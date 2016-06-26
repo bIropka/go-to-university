@@ -61,6 +61,7 @@ input, input:hover, input:active, input:focus {
 ul li {
     list-style: none;
     display: inline-block;
+    vertical-align: middle;
 }
 
 h1 {
@@ -513,13 +514,49 @@ body {
     opacity: 0.3;
 }
 .see-more:hover span {
-    text-decoration: underline;
     opacity: 0.6;
 }
 .see-more:hover:before {
     background: url('../images/sprite-programs.png') no-repeat 60% center;
     background-size: cover;
 }
+.see-more.opened:hover:before {
+    background: url('../images/sprite-programs.png') no-repeat 90% center;
+    background-size: cover;
+}
 .see-more .active {
     display: inline-block;
+}
+
+/** reviews **/
+.reviews {
+    background: #aeb8cc;
+    padding: 50px 100px;
+}
+.reviews h2 {
+    color: #555555;
+}
+.review-slide img {
+    width: 190px;
+    height: 190px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: #7d7d7d;
+}
+
+/** certificates **/
+.certificates {
+    padding: 50px 0;
+}
+.certificates ul {
+    margin-top: 30px;
+}
+.certificates li {
+    height: 220px;
+    margin: 1% 0.5%;
+}
+.certificates li img {
+    width: auto;
+    height: 100%;
 }
