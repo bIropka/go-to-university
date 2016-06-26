@@ -18,4 +18,10 @@ $(document).ready(function () {
 
     /** end of sliders **/
 
+    $('.see-more span').click(function () {
+        $(this).parent().find('span').toggleClass('active');
+        $(this).parents('.programs').find('.openable').slideToggle();
+        $(this).parent().toggleClass('opened');
+    });
+
 });
