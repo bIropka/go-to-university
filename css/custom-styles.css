@@ -410,12 +410,12 @@ body {
 }
 .specialties h2 {
     text-align: center;
-    margin-bottom: 50px;
 }
 .specialties .sub-title {
     font-size: 30px;
     padding-left: 50px;
     position: relative;
+    margin-top: 50px;
     margin-bottom: 15px;
 }
 .specialties .sub-title:before {
@@ -437,8 +437,11 @@ body {
 }
 .specialties table {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 25px;
     border-collapse: collapse;
+}
+.specialties .openable {
+    display: none;
 }
 .specialties table th {
     text-align: center;
@@ -446,10 +449,32 @@ body {
     font-size: 22px;
     padding: 1% 5px;
     border: 1px solid #dcddde;
+    border-right: none;
+}
+.specialties table th:last-child {
+    border-right: 1px solid #dcddde;
 }
 .specialties table th:nth-child(2n) {
     background: #eaf0fe;
 }
+.specialties table td {
+    border: 1px solid #dcddde;
+    border-top: none;
+    font-size: 22px;
+    padding: 1% 5px;
+}
+.specialties table tr:nth-child(2) td {
+    border-top: 1px solid #dcddde;
+}
 .specialties table td:nth-child(1) {
 
+}
+.see-more span {
+    font-size: 22px;
+    color: #023095;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.to-close {
+    display: none;
 }
