@@ -13,8 +13,9 @@ $(document).ready(function () {
             data: formNm.serialize(),
             success: function (data) {
                 // Вывод текста результата отправки
-                $('.bc-window').fadeOut();
-                $('.window-ok').fadeIn();
+                if (formID == 'inline-form') {
+                    $('.success-block').fadeIn();
+                }
             },
             error: function (jqXHR, text, error) {}
         });

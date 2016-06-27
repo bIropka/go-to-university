@@ -49,4 +49,8 @@ $(document).ready(function () {
         }
     });
 
+    $('.success-block .close-marker').click(function() {
+        $('.success-block').fadeOut();
+    });
+
 });

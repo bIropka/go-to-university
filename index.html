@@ -57,25 +57,32 @@
     <div class="slider-control left-control"></div>
     <div class="slider-control right-control"></div>
 
-    <form action="mail-1.php" id="form-inline" class="form-inline">
+    <form action="mail-1.php" id="inline-form" class="form-inline">
 
         <label class="form-field-wrap">
-            <input id="inline-name" class="form-field" type="text" placeholder="Ваше имя"/>
+            <input id="inline-name" name="inline-name" class="form-field" type="text" placeholder="Ваше имя" required/>
         </label>
 
         <label class="form-field-wrap">
-            <input id="inline-phone" class="form-field" type="text" placeholder="Телефон"/>
+            <input id="inline-phone" name="inline-phone" class="form-field" type="text" placeholder="Телефон" required/>
         </label>
 
         <label class="form-field-wrap">
-            <input id="inline-email" class="form-field" type="text" placeholder="@-mail"/>
+            <input id="inline-email" name="inline-email" class="form-field" type="text" placeholder="@-mail" required/>
         </label>
 
         <label class="form-field-wrap">
-            <input id='inline-spec' class="form-field" type="text" placeholder="Специальность"/>
+            <input id="inline-spec" name="inline-spec" class="form-field" type="text" placeholder="Специальность" required/>
         </label>
 
         <input type="submit" value="ОТПРАВИТЬ ЗАЯВКУ"/>
+
+        <div class="success-block">
+            <div class="close-marker">&#10006;</div>
+            <p>Благодарим.</p>
+            <p>Ваша заявка принята.</p>
+            <button>ОТПРАВИТЬ ЕЩЁ ЗАЯВКУ</button>
+        </div>
 
     </form>
 
@@ -451,11 +458,29 @@
 
 </div>
 
+<div class="window-callback">
 
+    <form action="mail-2.php" id="form-callback" class="form-callback">
+
+        <label class="form-field-wrap">
+            <input id="callback-name" name="callback-name" class="form-field" type="text" placeholder="Ваше имя" required/>
+        </label>
+
+        <label class="form-field-wrap">
+            <input id="callback-phone" name="callback-phone" class="form-field" type="text" placeholder="Телефон" required/>
+        </label>
+
+
+        <input type="submit" value="ОТПРАВИТЬ ЗАЯВКУ"/>
+
+    </form>
+
+</div>
 
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/parallax.min.js"></script>
+<script src="js/mail-script.js"></script>
 <script src="js/custom-scripts.js"></script>
 </body>
 
