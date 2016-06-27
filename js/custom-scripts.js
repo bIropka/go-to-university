@@ -53,4 +53,18 @@ $(document).ready(function () {
         $('.success-block').fadeOut();
     });
 
+    $('.success-block button').click(function() {
+        $('.success-block').fadeOut();
+    });
+
+    $('.get-callback').click(function () {
+        $('.window-callback').fadeIn();
+    });
+
+    $('.window-callback').click(function (event) {
+        $target = $(event.target);
+        if (!$target.closest($('.form-callback')).length) $('.window-callback').fadeOut();
+        if ($target.hasClass('close-marker')) $('.window-callback').fadeOut();
+    });
+
 });

@@ -6,7 +6,7 @@ $(document).ready(function () {
         var formNm = $('#' + formID);
         var scriptFile;
         if (formID == 'inline-form') scriptFile = 'mail-1.php';
-        if (formID == 'form-2') scriptFile = 'mail-2.php';
+        if (formID == 'callback-form') scriptFile = 'mail-2.php';
         $.ajax({
             type: "POST",
             url: scriptFile,
@@ -14,7 +14,9 @@ $(document).ready(function () {
             success: function (data) {
                 // Вывод текста результата отправки
                 if (formID == 'inline-form') {
-                    $('.success-block').fadeIn();
+                    $('.inline-success-block').fadeIn();
+                } else if (formID == 'callback-form') {
+                    $('.callback-success-block').fadeIn();
                 }
             },
             error: function (jqXHR, text, error) {}

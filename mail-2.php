@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST['name-2'])) {$name = $_POST['name-2'];}
-    if (isset($_POST['phone-2'])) {$phone = $_POST['phone-2'];}
+    if (isset($_POST['callback-name'])) {$name = $_POST['callback-name'];}
+    if (isset($_POST['callback-phone'])) {$phone = $_POST['callback-phone'];}
     if (isset($_POST['formData'])) {$formData = $_POST['formData'];}
 
     $to = "biropka@gmail.com"; /*Укажите адрес, на который должно приходить письмо*/

@@ -77,7 +77,7 @@
 
         <input type="submit" value="ОТПРАВИТЬ ЗАЯВКУ"/>
 
-        <div class="success-block">
+        <div class="inline-success-block success-block">
             <div class="close-marker">&#10006;</div>
             <p>Благодарим.</p>
             <p>Ваша заявка принята.</p>
@@ -460,7 +460,9 @@
 
 <div class="window-callback">
 
-    <form action="mail-2.php" id="form-callback" class="form-callback">
+    <form action="mail-2.php" id="callback-form" class="form-callback">
+
+        <div class="close-marker">&#10006;</div>
 
         <label class="form-field-wrap">
             <input id="callback-name" name="callback-name" class="form-field" type="text" placeholder="Ваше имя" required/>
@@ -470,8 +472,13 @@
             <input id="callback-phone" name="callback-phone" class="form-field" type="text" placeholder="Телефон" required/>
         </label>
 
+        <input type="submit" value="ПЕРЕЗВОНИТЕ МНЕ"/>
 
-        <input type="submit" value="ОТПРАВИТЬ ЗАЯВКУ"/>
+        <div class="callback-success-block success-block">
+            <div class="close-marker">&#10006;</div>
+            <p>Заявка на обратный звонок принята.</p>
+            <p>Мы свяжемся с Вами в ближайшее время.</p>
+        </div>
 
     </form>
 

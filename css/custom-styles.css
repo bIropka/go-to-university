@@ -269,18 +269,18 @@ body {
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
-.form-inline .form-field-wrap {
+.form-field-wrap {
     display: block;
     width: 270px;
     height: 40px;
     margin: 0 auto 15px;
 }
-.form-inline .form-field {
+.form-field {
     width: 100%;
     height: 100%;
     padding-left: 15px;
 }
-.form-inline input[type="submit"], .success-block button {
+.form-inline input[type="submit"], .success-block button, .form-callback input[type="submit"] {
     width: 210px;
     height: 50px;
     background: #ff6601;
@@ -295,6 +295,13 @@ body {
     -moz-box-shadow: 0 2px 4px -2px rgba(0,0,0,0.75);
     box-shadow: 0 2px 4px -2px rgba(0,0,0,0.75);
 }
+.success-block button {
+    margin-top: 25px;
+}
+.form-callback input[type="submit"] {
+    box-shadow: none;
+    background: #023095;
+}
 .success-block {
     position: absolute;
     left: 0;
@@ -305,7 +312,7 @@ body {
     padding: 30% 10px 0;
     display: none;
 }
-.success-block .close-marker {
+.close-marker {
     color: #ffffff;
     position: absolute;
     right: -20px;
@@ -701,7 +708,7 @@ body {
     left: 0;
     top: 0;
     background: rgba(0,0,0,0.25);
-    display: block;
+    display: none;
     text-align: left;
     z-index: 5;
 }
@@ -717,6 +724,7 @@ body {
     text-align: center;
     z-index: 10;
     background: rgba(226, 228, 228, 0.9);
+    padding: 20px 0;
 }
 
 @media (max-width: 1330px) {
