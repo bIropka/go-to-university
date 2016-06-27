@@ -49,11 +49,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.success-block .close-marker').click(function() {
-        $('.success-block').fadeOut();
-    });
-
-    $('.success-block button').click(function() {
+    $('.closer').click(function() {
         $('.success-block').fadeOut();
     });
 

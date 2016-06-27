@@ -280,7 +280,7 @@ body {
     height: 100%;
     padding-left: 15px;
 }
-.form-inline input[type="submit"], .success-block button, .form-callback input[type="submit"] {
+.form-inline input[type="submit"], .success-block .close-button, .form-callback input[type="submit"] {
     width: 210px;
     height: 50px;
     background: #ff6601;
@@ -295,8 +295,10 @@ body {
     -moz-box-shadow: 0 2px 4px -2px rgba(0,0,0,0.75);
     box-shadow: 0 2px 4px -2px rgba(0,0,0,0.75);
 }
-.success-block button {
-    margin-top: 25px;
+.success-block .close-button {
+    margin: 25px auto 0;
+    line-height: 50px;
+    cursor: pointer;
 }
 .form-callback input[type="submit"] {
     box-shadow: none;
@@ -725,6 +727,12 @@ body {
     z-index: 10;
     background: rgba(226, 228, 228, 0.9);
     padding: 20px 0;
+}
+.form-callback .success-block {
+    padding: 40px 0 0;
+}
+.form-callback .success-block p {
+    padding: 0 10px;
 }
 
 @media (max-width: 1330px) {
