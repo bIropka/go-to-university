@@ -14,6 +14,8 @@ $(document).ready(function () {
 
     $('.slider').slick({
 
+        autoplay: true,
+        autoplaySpeed: 3000,
         appendArrows: '.slider-control',
         prevArrow: '.left-control',
         nextArrow: '.right-control',
