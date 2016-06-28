@@ -111,12 +111,12 @@ body {
 
 .parallax-block {
     width: 100%;
-    padding-top: 34%;
+    padding-top: 28%;
 }
 
 /* header */
 .header {
-    background: #fff8f3;
+    background: #eaf0fe;
     position: relative;
     z-index: 1;
     border: 1px solid transparent;
