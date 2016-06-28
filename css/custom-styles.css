@@ -111,7 +111,7 @@ body {
 
 .parallax-block {
     width: 100%;
-    padding-top: 28%;
+    padding-top: 25%;
 }
 
 /* header */
@@ -437,6 +437,14 @@ body {
 .why-free p {
     font-size: 35px;
 }
+.image-block {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+}
 
 /** specialties **/
 .specialties {
@@ -734,7 +742,6 @@ body {
 .form-callback .success-block p {
     padding: 0 10px;
 }
-
 @media (max-width: 1330px) {
     .slide-1 .tagline, .slide-2 .tagline, .slide-3 .tagline {
         font-size: 70px;
