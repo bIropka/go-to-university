@@ -153,12 +153,41 @@ body {
     font-size: 33px;
     line-height: 1;
 }
-.get-callback {
+.phone-block {
     display: inline-block;
+    width: 305px;
+    vertical-align: middle;
+    float: right;
+    margin-top: 10px;
+}
+.phone-number {
+    font-size: 26px;
+    text-align: right;
+    padding-right: 20px;
+    position: relative;
+    padding-bottom: 3px;
+}
+.phone-number:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url('../images/icon-phone-black.png') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.phone-number span {
+    font-size: 36px;
+}
+.get-callback {
+    display: block;
     width: 305px;
     height: 50px;
     vertical-align: middle;
-    float: right;
     background: #023095;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -166,8 +195,10 @@ body {
     font-size: 15px;
     color: #ffffff;
     padding-left: 20px;
-    margin-top: 35px;
     position: relative;
+    -webkit-box-shadow: 0 2px 4px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 2px 4px -2px rgba(0,0,0,0.75);
+    box-shadow: 0 2px 4px -2px rgba(0,0,0,0.75);
 }
 .get-callback:before {
     content: '';
@@ -181,6 +212,12 @@ body {
     top: 0;
     bottom: 0;
     margin: auto;
+}
+.phone-block .get-callback:before {
+    display: none;
+}
+.phone-block .get-callback {
+    padding: 0;
 }
 
 /* top slider */
@@ -363,6 +400,7 @@ body {
     font-size: 30px;
 }
 .achievements .get-callback {
+    display: inline-block;
     width: 420px;
     height: 80px;
     font-size: 22px;
@@ -745,11 +783,9 @@ body {
 @media (max-width: 1330px) {
     .slide-1 .tagline, .slide-2 .tagline, .slide-3 .tagline {
         font-size: 70px;
-        text-align: left;
     }
     .slide-1 .tagline span, .slide-2 .tagline span, .slide-3 .tagline span {
         font-size: 70px;
-        text-align: left;
         margin: 0;
     }
     .slide-1 .tagline .text, .slide-2 .tagline .text, .slide-3 .tagline .text {
@@ -782,6 +818,10 @@ body {
     .form-inline {
         padding: 10px 0;
     }
+    .slide-1 .tagline {
+        left: 7%;
+        top: 50px;
+    }
 }
 @media (max-width: 1024px) {
     .header {
@@ -793,11 +833,6 @@ body {
     }
     .logo-text .tagline {
         font-size: 26px;
-    }
-    .header .get-callback {
-        display: block;
-        float: none;
-        margin: 25px auto 0;
     }
     .slider-wrapper {
         padding-bottom: 340px;
@@ -814,13 +849,13 @@ body {
         bottom: 0;
     }
     .slide-1 .tagline, .slide-2 .tagline, .slide-3 .tagline {
-        width: 75%;
+        width: 55%;
         margin: auto;
         left: 0;
         right: 0;
     }
     .slide-1 .tagline {
-        top: 10%;
+        width: 75%;
     }
     .form-inline {
         padding: 25px 0 30px;
@@ -835,6 +870,13 @@ body {
     }
     .reviews {
         padding: 50px 20px;
+    }
+}
+@media (max-width: 810px) {
+    .phone-block {
+        display: block;
+        float: none;
+        margin: 20px auto 0;
     }
 }
 @media (max-width: 768px) {
@@ -895,6 +937,12 @@ body {
     }
     .header .get-callback {
         width: 290px;
+    }
+    .phone-block {
+        width: 290px;
+    }
+    .phone-number {
+        padding-right: 0;
     }
     .achievements .get-callback {
         width: 300px;
