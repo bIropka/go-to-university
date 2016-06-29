@@ -496,6 +496,8 @@ body {
     text-align: center;
 }
 .specialties .sub-title {
+    display: block;
+    width: 100%;
     font-size: 30px;
     padding-left: 50px;
     position: relative;
@@ -706,9 +708,20 @@ body {
     height: 350px;
     margin: 1% 0.5%;
 }
-.certificates li img {
-    width: auto;
-    height: 100%;
+.certificates li:nth-child(1) {
+    width: 251px;
+    background: url('../images/image-certificate-1.jpg') no-repeat center;
+    background-size: cover;
+}
+.certificates li:nth-child(2) {
+    width: 241px;
+    background: url('../images/image-certificate-2.jpg') no-repeat center;
+    background-size: cover;
+}
+.certificates li:nth-child(3) {
+    width: 233px;
+    background: url('../images/image-certificate-3.jpg') no-repeat center;
+    background-size: cover;
 }
 
 /** contacts **/
@@ -961,11 +974,13 @@ body {
         height: 30px;
     }
     .specialties th, .specialties td {
-        font-size: 12px;
+        font-size: 10px;
     }
-    .specialties td:nth-child(2) {padding-left: 10px;}
+    .specialties {
+        padding: 50px 5px;
+    }
 }
-@media (max-width: 360px) {
+@media (max-width: 380px) {
     h1 {
         font-size: 28px;
     }
@@ -975,7 +990,11 @@ body {
     .logo-text .tagline {
         font-size: 18px;
     }
-    .specialties th, .specialties td {
-        font-size: 10px;
+    .specialties table {
+        width: 95%;
     }
+    .specialties th, .specialties td {
+        font-size: 8px;
+    }
+
 }
