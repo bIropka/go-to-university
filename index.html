@@ -805,11 +805,11 @@
         <div class="close-marker">&#10006;</div>
 
         <label class="form-field-wrap">
-            <input id="callback-name" name="callback-name" class="form-field" type="text" placeholder="Ваше имя" required/>
+            <input id="callback-name" name="callback-name" class="form-field" pattern="^[А-Яа-я]+$" data-message="Некорректная информация" type="text" placeholder="Ваше имя" required/>
         </label>
 
         <label class="form-field-wrap">
-            <input id="callback-phone" name="callback-phone" class="form-field user-phone" type="text" placeholder="Телефон" required/>
+            <input id="callback-phone" name="callback-phone" class="form-field user-phone" data-message="Некорректная информация" type="text" placeholder="Телефон" required/>
         </label>
 
         <input type="submit" value="ПЕРЕЗВОНИТЕ МНЕ" onclick="yaCounter38194850.reachGoal('zayavka'); return true;"/>
@@ -829,7 +829,6 @@
 <script src="js/parallax.min.js"></script>
 <script src="js/validatr.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
-<script src="js/mail-script.js"></script>
 <script src="js/custom-scripts.js"></script>
 </body>
 
