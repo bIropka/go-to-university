@@ -370,6 +370,32 @@ body {
     text-align: right;
     text-transform: uppercase;
 }
+.slide-4 .tagline {
+    width: 55%;
+    left: 15%;
+    text-align: right;
+}
+.slide-4 .tagline span {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.slide-4 .tagline span:nth-child(1), .slide-4 .tagline span:nth-child(2) {
+    text-align: right;
+    padding-right: 20%;
+}
+.slide-4 .tagline .text {
+    font-size: 39px;
+    text-align: left;
+}
+.slide-4 .tagline .text-bold {
+    font-size: 39px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'MyriadPro Regular', sans-serif;
+    text-align: left;
+    margin-top: 15px;
+}
 
 /** achievements **/
 .achievements {
@@ -802,10 +828,10 @@ body {
     padding: 0 10px;
 }
 @media (max-width: 1330px) {
-    .slide-1 .tagline, .slide-2 .tagline, .slide-3 .tagline {
+    .slide-1 .tagline, .slide-2 .tagline, .slide-3 .tagline, .slide-4 .tagline {
         font-size: 70px;
     }
-    .slide-1 .tagline span, .slide-2 .tagline span, .slide-3 .tagline span {
+    .slide-1 .tagline span, .slide-2 .tagline span, .slide-3 .tagline span, .slide-4 .tagline span:nth-child(1), .slide-4 .tagline span:nth-child(2) {
         font-size: 70px;
         margin: 0;
     }
@@ -827,14 +853,17 @@ body {
     .logo-text {
         margin: 15px 0 15px 2.5%;
     }
-    .slide-1 .tagline, .slide-2 .tagline, .slide-3 .tagline {
+    .slide-1 .tagline, .slide-2 .tagline, .slide-3 .tagline, .slide-4 .tagline {
         font-size: 60px;
     }
-    .slide-1 .tagline span, .slide-2 .tagline span, .slide-3 .tagline span {
+    .slide-1 .tagline span, .slide-2 .tagline span, .slide-3 .tagline span, .slide-4 .tagline span:nth-child(1), .slide-4 .tagline span:nth-child(2) {
         font-size: 60px;
     }
     .slide-1 .tagline .text, .slide-2 .tagline .text, .slide-3 .tagline .text {
         font-size: 32px;
+    }
+    .slide-4 .tagline .text, .slide-4 .tagline .text-bold {
+        font-size: 30px;
     }
     .form-inline {
         padding: 10px 0;
@@ -869,11 +898,15 @@ body {
         top: auto;
         bottom: 0;
     }
-    .slide-1 .tagline, .slide-2 .tagline, .slide-3 .tagline {
+    .slide-1 .tagline, .slide-2 .tagline, .slide-3 .tagline, .slide-4 .tagline {
         width: 55%;
         margin: auto;
         left: 0;
         right: 0;
+    }
+    .slide-4 .tagline {
+        width: 70%;
+        top: 10%;
     }
     .slide-1 .tagline {
         width: 75%;
@@ -898,6 +931,9 @@ body {
         display: block;
         float: none;
         margin: 20px auto 0;
+    }
+    .slide-4 .tagline span:nth-child(1), .slide-4 .tagline span:nth-child(1) {
+        font-size: 50px;
     }
 }
 @media (max-width: 768px) {
